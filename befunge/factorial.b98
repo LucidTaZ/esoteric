@@ -1,0 +1,24 @@
+                                        v
+  Calculates the factorial of the input
+
+>,v
+|:< "Input number: "0                   <
+$          Zero placeholder is not needed
+&          but I think nicer nonetheless.
+           Otherwise we depend on an
+           empty stack.
+>                                       v
+>,v
+|:< "The factorial is: "0               <
+$
+
+  Factorial calculation
+
+>  >:1-:v   All factors now on stack v *<
+   ^    _$                           >\:|
+v                                      $<
+
+  Result output
+
+> . 25*, @
+
