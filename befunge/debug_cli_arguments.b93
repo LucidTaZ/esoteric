@@ -1,0 +1,26 @@
+v Collects the STDIN and outputs it
+  This is experimentation for working
+  with file contents, which cannot be
+  read (in Funge-93) and must therefore
+  come via STDIN
+
+  Therefore, to read a file into the program, use:
+  cat file | cfunge -W -E begunge/test_cli_arguments.b98
+
+             Read loop
+             v   <
+>            >#v~^ Note: ~ reads a character but reverses
+v              <         direction on error/EOF
+                         thus the trampoline is needed
+
+
+
+  Output result in reverse order
+
+             Print loop
+             v,<
+>            >:|
+v              < NUL byte (stack empty again)
+
+@
+
