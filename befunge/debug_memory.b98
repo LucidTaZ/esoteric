@@ -1,0 +1,27 @@
+v Takes the standard input and stores it in memory.                  Start --> |
+  The memory in Befunge is situated in the code.                     of memory |
+  Therefore a special area is reserved to the right.                 at cell   |
+                                                                     (80, 0)   |
+  Note that this is a b93 program except for the fact
+  that it relies on an unbounded program/memory space.
+  Therefore it must still be executed as b98.
+
+   v       x       y        put in memory
+
+>  "X"   99*1-     0        p                v
+v                                            <
+
+           x       y        read and echo
+
+>        99*1-     0        g ,              v
+v                                            <
+
+  TODO: Write a whole string to memory (including length?)
+        and then read it back and echo it. (no need to read all into stack)
+        After that, read an array of strings (newline delimited?)
+        And store them all.
+        Finally, hook up a random number generator that can result in zero
+        up to the number of elements specified - 1.
+
+@
+
